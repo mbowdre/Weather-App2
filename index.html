@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <form id="search-form">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="City"
+                aria-label="City"
+                autocomplete="off"
+                autofocus="on"
+                id="search-city"
+              />
+              <input
+                type="submit"
+                value="Search"
+                class="search-button"
+                placeholder="Submit"
+              />
+              <div class="col-3">
+                <button id="current" class="current-button">
+                  Current
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </h1>
+      <div class="body">
+        <h2>
+          Austin
+        </h2>
+        <ul>
+          <li id="date">
+            Wednesday 22:00
+          </li>
+          <li id="description">
+            Partly Cloudy
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="Cloudy icon"
+                class="weather-icon float-left"
+              />
+              <div class="temperature float-left">
+                <span class="temp"> 19</span>
+                <span class="degrees">
+                  <a href="#" id="celcius">&degC</a> |<a href="#" id="farenheit"
+                    >&degF</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li id="humidity">
+                Humidity: 77%
+              </li>
+              <li id="wind">
+                Wind: 8 km/h
+                <h></h>
+                <h></h>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-2 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">103&deg;</h5>
+                <p class="card-text">
+                  <strong>Sun</strong>
+                  <br />
+                  <i class="fa-solid fa-cloud-showers-heavy storm-cloud"></i>
+                  <br />
+                  50%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">104&deg;</h5>
+                <p class="card-text">
+                  <strong>Mon</strong>
+                  <br />
+                  <i class="fa-solid fa-cloud-showers-heavy storm-cloud"></i>
+                  <br />
+                  50%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">104&deg;</h5>
+                <p class="card-text">
+                  <strong>Tue</strong>
+                  <br />
+                  <i class="fa-solid fa-cloud-showers-heavy storm-cloud"></i>
+                  <br />
+                  30%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">104&deg;</h5>
+                <p class="card-text">
+                  <strong>Wed</strong>
+                  <br />
+                  <i class="fa-solid fa-cloud-showers-heavy storm-cloud"></i>
+                  <br />
+                  50%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">103&deg;</h5>
+                <p class="card-text">
+                  <strong>Thu</strong>
+                  <br />
+                  <i class="fa-solid fa-cloud-showers-heavy storm-cloud"></i>
+                  <br />
+                  40%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="src/index.js" ;>
+        src = "https://kit.fontawesome.com/e088aa38bd.js";
+        crossorigin = "anonymous";
+      </script>
+    </div>
+  </body>
+</html>
